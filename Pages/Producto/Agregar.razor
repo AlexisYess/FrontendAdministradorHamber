@@ -1,0 +1,74 @@
+﻿@page "/producto/agregar"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject ILocalStorageService _localStorageService
+
+<MudText Typo="Typo.h2" Class="ml">Nuevo Producto</MudText>
+
+<MudGrid>
+    <MudItem xs="12" sm="7">
+        <MudPaper Class="pa-4">
+            <EditForm Model="produc" OnValidSubmit="OnValidSubmit">
+                <DataAnnotationsValidator />
+                <MudCard>
+                    <MudCardContent>
+                        <MudTextField Label="Nombre" @bind-Value="produc.Nombre" For="@(() => produc.Nombre)" />
+                        <MudTextField Label="Categoria" @bind-Value="produc.IdCategoria" For="@(() => produc.IdCategoria)" />
+                        <MudTextField Label="Marca" @bind-Value="produc.IdMarca" For="@(() => produc.IdMarca)" />
+                        <MudTextField Label="Descripcion" @bind-Value="produc.Descripcion" For="@(() => produc.Descripcion)" />
+                        <MudText Typo="Typo.body2">Fecha: @produc.Fecha</MudText>
+                        <MudTextField Label="Precio" @bind-Value="produc.Precio" For="@(() => produc.Precio)" />
+                    </MudCardContent>
+
+                    <MudCardActions>
+                        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Guardar</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            </EditForm>
+            @if (showLeaveAlert)
+            {
+                <MudAlert Severity="Severity.Error" ContentAlignment="HorizontalAlignment.Center" ShowCloseIcon="true" CloseIconClicked="(() => CloseMe(true))">No se pudo guardar.</MudAlert>
+            }
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+@code {
+    bool success;
+    private bool showLeaveAlert = false;
+    Producto produc = new Producto();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Http.DefaultRequestHeaders.Authorization =
+            new AuthenticationHeaderValue("Bearer", await _localStorageService.GetItemAsync<string>("token"));
+    }
+
+    private async Task OnValidSubmit(EditContext context)
+    {
+        await save();
+        success = true;
+        StateHasChanged();
+    }
+
+    private async Task save()
+    {
+
+        var httpResponse = await Http.PostAsJsonAsync<Producto>("producto", produc);
+
+        if (!(httpResponse.StatusCode == System.Net.HttpStatusCode.OK))
+        {
+            showLeaveAlert = true;
+        }
+        else
+        {
+            NavigationManager.NavigateTo("/producto/index");
+        }
+    }
+
+    private void CloseMe(bool value)
+    {
+        showLeaveAlert = false;
+    }
+}
+

@@ -1,0 +1,15 @@
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\Acministrador.Hamber.blazor.csproj.AssemblyReference.cache
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\Acministrador.Hamber.blazor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\Acministrador.Hamber.blazor.AssemblyInfoInputs.cache
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\Acministrador.Hamber.blazor.AssemblyInfo.cs
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\Acministrador.Hamber.blazor.csproj.CoreCompileInputs.cache
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\Acministrador.Hamber.blazor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\Acministrador.Hamber.blazor.RazorComponent.input.cache
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\RazorDeclaration\Shared\LoginLayout.razor.g.cs
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\Nicole Pineda\OneDrive\Escritorio\AdminHamber\Acministrador.Hamber.blazor\obj\Debug\net5.0\Acministrador.Hamber.blazor.RazorComponent.output.cache
